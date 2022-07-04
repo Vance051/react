@@ -11,28 +11,7 @@
   margin: 0 auto;
 }
 
-
-.header {
-  grid-area: h;
-  background: rgb(223, 110, 110);
-}
-
-.nav {
-  grid-area: n;
-  background: rgb(167, 248, 135);
-}
-
-.header img {
-  width: 30px;
-}
-
-.content {
-  grid-area: c;
-  background: rgb(91, 202, 230);
-}
-
 .footer {
-
   grid-area: f;
   background: rgba(32, 105, 114, 0.585);
 }
