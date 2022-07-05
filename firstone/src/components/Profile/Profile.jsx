@@ -4,7 +4,7 @@ import MyPosts from "./MyPosts/MyPosts";
 
 
 const Profile = () => {
-    return  <div className={s.content}>
+    return  <div>
     <div>
     <img src="https://i0.wp.com/www.todosurf.com/wp-content/uploads/2018/10/RetroFish-produktbild-1.jpg?w=800&ssl=1" alt="?"></img>
    </div>
