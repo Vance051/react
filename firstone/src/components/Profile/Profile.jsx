@@ -1,16 +1,17 @@
 import React from "react";
-import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
-const Profile = () => {
-    return  <div>
+
+
+const Profile = (props) => {
+  return (
     <div>
-    <img src="https://i0.wp.com/www.todosurf.com/wp-content/uploads/2018/10/RetroFish-produktbild-1.jpg?w=800&ssl=1" alt="?"></img>
-   </div>
-   <div>ava +desc</div>
-   <MyPosts/>
-  </div>
+      <ProfileInfo />
+      <MyPosts />
+    </div>
+  )
 };
 
 export default Profile;
