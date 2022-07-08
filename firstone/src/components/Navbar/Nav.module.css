@@ -8,6 +8,7 @@
   }
 
 
- .active-link {
-    color: rgb(236, 236, 232);
-  }
+
+.active {
+  background: gold
+}
