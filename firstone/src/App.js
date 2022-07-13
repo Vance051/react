@@ -8,11 +8,12 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
+
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
     <div className="app-wrapper">
       <Header />
       <Nav />
@@ -20,8 +21,8 @@ const App = () => {
       <Routes>
 
       {/* <Route path="/" element={<App />} /> */}
-      <Route path="/profile" element={<Profile />}/>
-      <Route path="/dialogs/*" element={<Dialogs />}/>
+      <Route path="/profile" element={<Profile posts={props.posts} />}/>
+      <Route path="/dialogs/*" element={<Dialogs dialogs={props.dialogs}  messages={props.messages} />}/>
       <Route path="/news" element={<News />}/>
       <Route path="/music" element={<Music />}/>
       <Route path="/settings" element={<Settings />}/>
@@ -30,7 +31,7 @@ const App = () => {
       
       <Footer />
     </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 };
 

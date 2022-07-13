@@ -1,9 +1,15 @@
 .header {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
     grid-area: h;
-    background: rgb(223, 110, 110);
-  }
+    background: #303030;;
+    color: white;
+      }
 
-  
-.header img {
-    width: 30px;
-  }
+h1 {
+  align-self: center;
+justify-self: center;}
+
+img {
+  align-self: center;
+  justify-self: center;}
